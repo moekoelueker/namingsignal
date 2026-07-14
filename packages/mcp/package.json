@@ -1,0 +1,48 @@
+{
+  "name": "@namingsignal/mcp",
+  "version": "0.2.0",
+  "description": "Stdio MCP server for NamingSignal: evidence-first product naming with exact domain registry checks, namespace checks, and finalist research.",
+  "license": "MIT",
+  "homepage": "https://namingsignal.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moekoelueker/namingsignal.git",
+    "directory": "packages/mcp"
+  },
+  "bugs": "https://github.com/moekoelueker/namingsignal/issues",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "naming",
+    "domain",
+    "rdap",
+    "claude",
+    "codex",
+    "agent"
+  ],
+  "mcpName": "com.namingsignal/naming-signal",
+  "bin": {
+    "namingsignal-mcp": "dist/index.js"
+  },
+  "main": "dist/server-core.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.19",
+    "typescript": "^5.9.3"
+  }
+}

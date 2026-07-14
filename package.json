@@ -1,0 +1,23 @@
+{
+  "name": "namingsignal-oss",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Open-source MCP and CLI clients plus the deterministic naming core for namingsignal.com",
+  "license": "MIT",
+  "homepage": "https://namingsignal.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moekoelueker/namingsignal.git"
+  },
+  "bugs": "https://github.com/moekoelueker/namingsignal/issues",
+  "engines": {
+    "node": ">=20"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "pack:all": "npm pack --workspaces"
+  }
+}

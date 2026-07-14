@@ -1,0 +1,41 @@
+{
+  "name": "@namingsignal/cli",
+  "version": "0.2.0",
+  "description": "NamingSignal CLI: keyless local domain checks and privacy-bounded naming briefs, plus hosted finalist research through namingsignal.com.",
+  "license": "MIT",
+  "homepage": "https://namingsignal.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moekoelueker/namingsignal.git",
+    "directory": "packages/cli"
+  },
+  "bugs": "https://github.com/moekoelueker/namingsignal/issues",
+  "keywords": [
+    "naming",
+    "domain",
+    "rdap",
+    "domain-checker",
+    "cli",
+    "brand",
+    "agent"
+  ],
+  "bin": {
+    "namingsignal": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.19",
+    "typescript": "^5.9.3"
+  }
+}

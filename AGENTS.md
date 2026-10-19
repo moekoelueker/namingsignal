@@ -22,8 +22,8 @@ Status: both packages are 0.2.0 on npm (published 2026-07-14); the MCP server is
 
 ## Map
 
-- `packages/cli/`: `@namingsignal/cli` (`src/index.ts`, `src/core/`, `README.md`).
-- `packages/mcp/`: `@namingsignal/mcp` (`src/index.ts` starts it, `src/server-core.ts` registers the tools, `src/agent-guidance.ts`, `src/core/`, `README.md`).
+- `packages/cli/`: `@namingsignal/cli` (`packages/cli/src/index.ts`, `packages/cli/src/core/`, `packages/cli/README.md`).
+- `packages/mcp/`: `@namingsignal/mcp` (`packages/mcp/src/index.ts` starts it, `packages/mcp/src/server-core.ts` registers the tools, `packages/mcp/src/agent-guidance.ts`, `packages/mcp/src/core/`, `packages/mcp/README.md`).
 - `docs/agent-workflow.md`: how an agent should drive a naming run end to end.
 - `openapi.json`: the hosted API contract snapshot.
 - `docs/DECISIONS.md`: decisions of record, newest first.
